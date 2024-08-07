@@ -9,13 +9,15 @@ def listele():
 def add():
     mission = input("Gorevi giriniz : ")
     todolist.append(mission)
+    return listele()
 
 def delete():
-    pass
+    deletItem = int(input("Kacinci gorevi silmek istiyorsunuz  : "))
+    todolist.pop(deletItem-1)
 
 def islemler():
-    print("1-Listeyi Goruntule\n"
-          "2-Listeye Ekle\n"
+    print("1-Gorev Listesini Goruntule\n"
+          "2-Gorev Ekle\n"
           "3-Gorev Sil\n"
           "4-Cikis")
 
